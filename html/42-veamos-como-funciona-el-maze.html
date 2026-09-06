@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mtq577od-a2ugmn4uc">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>4.2. Veamos cómo funciona el Maze | Mi propio videojuego</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Contenidos de la asignatura de Computación y Robótica para 1º de ESO sobre la creación de un videojuego con el programa Scratch">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260906202553G0H67Z","packageTitle":"Mi propio videojuego","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/quick-questions-multiple-choice/quick-questions-multiple-choice.js"></script><link rel="stylesheet" href="../idevices/quick-questions-multiple-choice/quick-questions-multiple-choice.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mtq577od-a2ugmn4uc" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">MI PROPIO VIDEOJUEGO</a>
+</li>
+<li> <a href="../html/1-creamos-un-videojuego.html" class="no-ch">1. ¿Creamos un videojuego?</a>
+</li>
+<li> <a href="../html/2-activa-tu-sentido-gamer-.html" class="no-ch">2. Activa tu sentido gamer </a>
+</li>
+<li> <a href="../html/3-como-se-crea-un-videojuego.html" class="no-ch">3. ¿Cómo se crea un videojuego?</a>
+</li>
+<li class="current-page-parent"> <a href="../html/4-explorando-los-videojuegos.html" class="daddy">4. Explorando los videojuegos</a>
+<ul class="other-section">
+<li> <a href="../html/41-como-funciona-el-pong.html" class="no-ch">4.1. ¿Cómo funciona el Pong?</a>
+</li>
+<li class="active"> <a href="../html/42-veamos-como-funciona-el-maze.html" class="active no-ch">4.2. Veamos cómo funciona el Maze</a>
+</li>
+<li> <a href="../html/43-y-el-fish-chomp-como-funciona.html" class="no-ch">4.3. Y el Fish Chomp ¿cómo funciona?</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-la-importancia-de-la-interactividad-.html" class="no-ch">5. La importancia de la interactividad </a>
+</li>
+<li> <a href="../html/6-mejora-tu-videojuego-con-las-variables.html" class="no-ch">6. Mejora tu videojuego con las variables</a>
+</li>
+<li> <a href="../html/7-sacale-partido-a-los-clones.html" class="no-ch">7. Sácale partido a los clones</a>
+</li>
+<li> <a href="../html/8-a-realizar-el-videojuego.html" class="no-ch">8. A realizar el videojuego</a>
+</li>
+<li> <a href="../html/9-presentamos-nuestro-juego.html" class="no-ch">9. Presentamos nuestro juego</a>
+</li>
+<li> <a href="../html/10-sacamos-conclusiones.html" class="no-ch">10. Sacamos conclusiones</a>
+</li>
+<li> <a href="../html/i-guia-didactica.html" class="no-ch">I. Guía didáctica</a>
+</li>
+<li> <a href="../html/iicreditos.html" class="no-ch">II.Créditos</a>
+</li>
+</ul>
+</nav><main id="page-mtq577od-a2ugmn4uc" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">7</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">16</strong></span></p>
+
+<div class="package-header"><p class="package-title">Mi propio videojuego</p></div>
+<div class="page-header"><h1 class="page-title">4.2. Veamos cómo funciona el Maze</h1></div>
+</header><div id="page-content-page-mtq577od-a2ugmn4uc" class="page-content">
+<article id="block-mtq577of-aozej98cp" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-zpv70v13l" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="../content/resources/retor_escolares_conbocadillo.gif" title="RETOR" style="float: left; margin-right: 10px; margin-left: 10px;" alt="La imagen describe a Retor" width="250" height="250"><strong></strong><strong></strong></p>
+<p style="text-align: justify;">Tras haber visto el funcionamiento y los&nbsp;elementos del&nbsp;videojuego Pong en Scratch, hemos descubierto cómo podemos&nbsp;diseñar, encontrar errores de funcionamiento y crear tu propia versión del videojuego<strong>.</strong></p>
+<p style="text-align: justify;">Ahora vamos a hacer algo similar con el <strong>videojuego del Laberinto (Maze)</strong>, comenzaremos recordando <strong>sus características </strong>más destacables y&nbsp;finalmente<strong> aprenderemos </strong>cómo podemos<strong>&nbsp;modificarlo.</strong></p>
+<p style="text-align: center;"><span style="font-size: 18pt; font-family: 'comic sans ms', sans-serif; color: #993366;"><strong>¡Adelante con él!</strong></span></p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mtq577of-wwvijgd3r" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/share.png" alt="">
+</div>
+<h1 class="box-title">¿Cómo funciona el videojuego Laberinto (Maze)?</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-07w7x0d9g" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Recuerda que ya exploramos el funcionamiento del videojuego <em>Laberinto</em> o <em>Maze</em> en Scratch en la página <em>3. Explorando los videojuegos</em>, ahora vamos a <strong>analizar</strong>&nbsp;su&nbsp;<strong>funcionamiento,</strong>&nbsp;las <strong>dinámicas</strong> del juego y una posible&nbsp;<strong>programación</strong> para cada una de ellas.</p>
+<div class="exe-fx exe-paginated">
+<h2>Vídeo de funcionamiento y programación</h2>
+<p style="text-align: justify;">A continuación, visiona el siguiente&nbsp;video&nbsp;para que recuerdes el <strong>funcionamiento</strong> de este tipo de <strong>videojuegos</strong> de <strong>laberintos</strong>.&nbsp;</p>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/Kw2ZlIGm8Vk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+<h2>Funcionamiento de la mecánica fundamental</h2>
+<p style="text-align: justify;">El videojuego consiste en mover un objeto o bola por un laberinto desde su entrada hasta la salida. El objetivo consiste en llegar a la <strong>salida</strong> marcada con un <strong>color</strong>. Si en algún momento <strong>tocamos</strong> un borde o pared del "<strong>Laberinto</strong>" la bola&nbsp;<strong>rebota</strong> y no puede avanzar.</p>
+<p style="text-align: justify;">A continuación, tienes una muestra del videojuego Laberinto. ¡Puedes probarla!</p>
+<p style="text-align: justify;">NOTA: La bola se mueve con las flechas del teclado.</p>
+<p style="text-align: center;"><iframe width="485" height="402" src="https://scratch.mit.edu/projects/638568432/embed"></iframe></p>
+<h2>Elementos</h2>
+<p style="text-align: justify;">Una vez visto el funcionamiento del videojuego Laberinto (Maze), vamos a&nbsp;<strong>identificar</strong>&nbsp;los <strong>elementos</strong> que componen este videojuego.</p>
+<p><img src="../content/resources/Maze_juego.png" alt="Imagen que representa el videojuego Maze" title="Videojuego Laberinto (Maze)" style="display: block; margin-left: auto; margin-right: auto;" width="442" height="338"></p>
+<p style="text-align: justify;">El juego está compuesto por los siguientes elementos:</p>
+<ul style="text-align: justify;">
+<li style="text-align: justify;"><span style="font-size: 16.8px;"><strong>Laberinto</strong>, se diseña como un fondo del escenario.</span></li>
+<li style="text-align: justify;"><span style="font-size: 16.8px;">La <strong>bola</strong>, será el objeto principal que movemos hasta la salida del laberinto.</span></li>
+<li style="text-align: justify;"><span style="font-size: 16.8px;">La <strong>salida</strong>, estará marcada por un color diferente a los presentes en el laberinto, también se podrá crear como un objeto.</span><span style="font-size: 16.8px;"></span></li>
+</ul>
+<p style="text-align: justify;"><span style="font-size: 16.8px;">De forma esquemática tendríamos la siguiente <strong>descomposición</strong> del videojuego:</span></p>
+<p><span style="font-size: 16.8px;"><img src="../content/resources/Maze_elementos_esquema.png" alt="Imagen del esquema de los elementos del Laberinto o Maze" title="Esquema de los elementos del Maze" style="display: block; margin-left: auto; margin-right: auto;" width="461" height="305"></span></p>
+<p style="text-align: justify;">Vamos a ver una posible&nbsp;<strong>programación</strong>&nbsp;para estos&nbsp;<strong>elementos</strong> del videojuego <strong>Laberinto</strong> (Maze) en Scratch, atendiendo a cada una de las <strong>dinámicas</strong> de este juego.</p>
+<h2>Dinámicas</h2>
+<p style="text-align: justify;">En la siguiente imagen puedes ver un posible&nbsp;<strong>esquema</strong>&nbsp;con la <strong>descomposición</strong> del videojuego en sus <strong>elementos</strong> y <strong>acciones</strong>.</p>
+<p><img src="../content/resources/Maze_acciones_esquema.png" alt="Imagen con una descomposición de acciones del Maze" title="Maze descomposición de elementos y acciones" style="display: block; margin-left: auto; margin-right: auto;" width="600" height="535"></p>
+<h2>Movimiento de la bola</h2>
+<p style="text-align: justify;">Podemos<strong> controlar </strong>el<strong> movimiento de la bola</strong> con las<strong> flechas direccionales </strong>del<strong> teclado.</strong></p>
+<p style="text-align: center;"><img src="../content/resources/Maze_movimiento.png" alt="Imagen que describe los bloques de movimiento del Maze" title="Bloques de movimiento del Maze" style="margin-right: 10px; margin-left: 10px;" width="434" height="257"></p>
+<h2>Detección paredes laberinto: separación de bola</h2>
+<p style="text-align: justify;">Si la bola<strong> toca las paredes</strong> del laberinto debe salir:</p>
+<p style="text-align: justify;">En la misma dirección y velocidad con la que toca las paredes, pero en sentido contrario.&nbsp;</p>
+<p style="text-align: justify;">En el siguiente programa, la bola al tocar el color de las paredes del laberinto, se&nbsp;moverá a la misma velocidad pero en dirección contraria.</p>
+<p><img src="../content/resources/Maze_rebote.png" alt="Imagen que describe los bloques para separar la bola de las paredes del laberinto" title="Bloques para separarse de las paredes del laberinto" style="display: block; margin-left: auto; margin-right: auto;" width="466" height="205"></p>
+<h2>Detección salida: Ganar el juego</h2>
+<p style="text-align: justify;">Cuando la bola llega a la salida o meta<strong>&nbsp;mostrará un mensaje</strong>. Para ello, tenemos varias opciones, lo más sencillo es programar que el objeto salida diga este mensaje o podemos diseñar&nbsp;un nuevo objeto con la herramienta <em>pinta</em> que diga <strong><em>Ganaste</em>.</strong></p>
+<p style="text-align: justify;"><strong>Dicho objeto</strong> al iniciar el videojuego <strong>estará escondido</strong>. Para que este <strong>objeto se muestre,&nbsp;</strong>debe esperar a que la bola alcance la salida.&nbsp;En ese momento mostraremos el objeto “<em>Ganaste</em>” y detendremos el juego.</p>
+<p><img src="../content/resources/Maze_meta.png" alt="Imagen que describe los bloques para ganar el juego Maze" title="Bloques para ganar el juego Maze" style="display: block; margin-left: auto; margin-right: auto;" width="285" height="231"></p>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mtq577of-8jcf0h4dj" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/write.png" alt="">
+</div>
+<h1 class="box-title">Vamos a comprobar lo que sabes sobre el videojuego Maze</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-v2kcbgsmv" class="idevice_node quick-questions-multiple-choice" data-idevice-path="../idevices/quick-questions-multiple-choice/" data-idevice-type="quick-questions-multiple-choice">
+<div class="selecciona-IDevice"><div class="selecciona-instructions gameQP-instructions"><p>Selecciona las respuestas correctas y pulsa sobre el botón "responder"</p></div><div class="selecciona-version js-hidden">undefined</div><div class="selecciona-feedback-game"></div><div class="selecciona-DataGame js-hidden" >%E9%B0%F3%E1%FB%F5%FC%F3%E6%E7%E0%F3%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%E7%E6%FA%FD%E0%C4%FB%F6%F7%FD%B0%A8%B0%B0%BE%B0%E6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%C1%F7%FE%F7%F1%F1%FB%FD%FC%F3%B0%BE%B0%F7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%FB%F6%C4%FB%F6%F7%FD%B0%A8%B0%B0%BE%B0%E1%E6%F3%E0%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%D7%EA%F7%B0%A8%B0%B7%A1%D1%E2%B7%A1%D7%C1%F7%FE%F7%F1%F1%FB%FD%FC%F3%B7%A0%A2%FE%F3%E1%B7%A0%A2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B7%A0%A2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B7%A0%A2%EB%B7%A0%A2%E2%E7%FE%E1%F3%B7%A0%A2%E1%FD%F0%E0%F7%B7%A0%A2%F7%FE%B7%A0%A2%F0%FD%E6%B7%D4%A1%FC%B7%A0%A2%B7%A0%A0%E0%F7%E1%E2%FD%FC%F6%F7%E0%B7%A0%A0%B7%A1%D1%BD%E2%B7%A1%D7%B0%BE%B0%FB%FC%E1%E6%E0%E7%F1%E6%FB%FD%FC%E1%B0%A8%B0%C1%F7%FE%F7%F1%F1%FB%FD%FC%F3%B2%FE%F3%E1%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B2%EB%B2%E2%E7%FE%E1%F3%B2%E1%FD%F0%E0%F7%B2%F7%FE%B2%F0%FD%E6a%FC%B2%CE%B0%E0%F7%E1%E2%FD%FC%F6%F7%E0%CE%B0%B2%B0%BE%B0%E1%FA%FD%E5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%FD%E2%E6%FB%FD%FC%E1%C0%F3%FF%F6%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F3%FC%E1%E5%F7%E0%E1%C0%F3%FF%F6%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%E1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%E6%E0%E7%F7%BE%B0%E6%FB%FF%F7%C1%FA%FD%E5%C1%FD%FE%E7%E6%FB%FD%FC%B0%A8%A1%BE%B0%E7%E1%F7%DE%FB%E4%F7%E1%B0%A8%E6%E0%E7%F7%BE%B0%FC%E7%FF%F0%F7%E0%DE%FB%E4%F7%E1%B0%A8%A1%BE%B0%FB%E6%FB%FC%F7%E0%F3%E0%EB%B0%A8%E9%B0%E1%FA%FD%E5%D1%FE%E7%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FE%E7%F7%D5%F3%FF%F7%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%D1%FE%E7%F7%B0%A8%A6%A2%BE%B0%E1%FA%FD%E5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%F1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%BE%B0%FF%F7%E1%E1%F3%F5%F7%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%B0%EF%BE%B0%E1%F7%FE%F7%F1%E6%E1%D5%F3%FF%F7%B0%A8%C9%E9%B0%E6%EB%E2%F7%B0%A8%A3%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A1%BE%B0%E6%EB%E2%F7%C1%F7%FE%F7%F1%E6%B0%A8%A2%BE%B0%EA%B0%A8%A2%BC%A2%A6%A4%A0%A7%BE%B0%EB%B0%A8%A2%BC%A6%A5%A7%A4%AA%A7%A3%A4%A2%A6%A0%A5%AA%A2%A5%A7%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%E0%F7%E1%FD%E7%E0%F1%F7%E1%BD%DF%F3%E8%F7%CD%FF%F7%E6%F3%BC%E2%FC%F5%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%FA%FB%E6%B0%A8%BF%A3%BE%B0%F7%E0%E0%FD%E0%B0%A8%BF%A3%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0-%D3%B2%E3%E7%7B%B2%F7%FE%F7%FF%F7%FC%E6%FD%B2%F6%F7%FE%B2%DF%F3%E8%F7%B2%FE%F7%B2%F1%FD%E0%E0%F7%E1%E2%FD%FC%F6%F7%FC%B2%F7%E1%E6%FD%E1%B2%F0%FE%FD%E3%E7%F7%E1%B2%F6%F7%B2%E2%E0%FD%F5%E0%F3%FF%F3%F1%FBa%FC%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%D0%FD%FE%F3%B0%BE%B0%DE%F3%F0%F7%E0%FB%FC%E6%FD%B0%BE%B0%C1%F3%FE%FB%F6%F3%B0%BE%B0%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%D1%B0%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%A1%A7%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A3%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A1%BE%B0%E6%EB%E2%F7%C1%F7%FE%F7%F1%E6%B0%A8%A2%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%DB%FF%F3%F5%F7%FC%B2%E1%FD%F0%E0%F7%B2%FE%FD%E1%B2%F0%FE%FD%E3%E7%F7%E1%B2%F6%F7%B2%FB%FC%FB%F1%FB%FD%B2%F6%F7%FE%B2%DF%F3%E8%F7%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%E0%F7%E1%FD%E7%E0%F1%F7%E1%BD%DF%F3%E8%F7%CD%FB%FC%FB%F1%FB%FD%BC%E2%FC%F5%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%FA%FB%E6%B0%A8%BF%A3%BE%B0%F7%E0%E0%FD%E0%B0%A8%BF%A3%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0-%D3%B2%E3%E7%7B%B2%FD%F0%F8%F7%E6%FD%B2%E2%F7%E0%E6%F7%FC%F7%F1%F7%B2%EB%B2%E2%F3%E0%F3%B2%E3%E7%F7%B2%E1%FB%E0%E4%F7%FC%B2%F7%E1%E6%FD%E1%B2%F0%FE%FD%E3%E7%F7%E1%B2%F6%F7%B2%E2%E0%FD%F5%E0%F3%FF%F3%F1%FBa%FC%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%D3%FE%B2%FE%F3%F0%F7%E0%FB%FC%E6%FD%B2%EB%B2%E1%FB%E0%E4%F7%FC%B2%E2%F3%E0%F3%B2%F1%F7%FC%E6%E0%F3%E0%FE%FD%B2%F7%FC%B2%FE%F3%B2%E2%F3%FC%E6%F3%FE%FE%F3%B0%BE%B0%D3%B2%FE%F3%B2%F0%FD%FE%F3%B2%E1%FB%E0%E4%F7%FC%B2%E2%F3%E0%F3%B2%E2%FD%E1%FB%F1%FB%FD%FC%F3%E0%FE%F3%B2%F7%FC%B2%FE%F3%B2%F7%FC%E6%E0%F3%F6%F3%B2%F6%F7%FE%B2%FE%F3%F0%F7%E0%FB%FC%E6%FD%BC%B0%BE%B0%D3%B2%FE%F3%B2%E1%F3%FE%FB%F6%F3%B2%EB%B2%E1%FB%E0%E4%F7%FC%B2%E2%F3%E0%F3%B2%E2%FD%E1%FB%F1%FB%FD%FC%F3%E0%FE%F3%B2%F7%FC%B2%FE%F3%B2%E1%F3%FE%FB%F6%F3%B2%F6%F7%FE%B2%FE%F3%F0%F7%E0%FB%FC%E6%FD%B0%BE%B0%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%D0%B0%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%A1%A7%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A3%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A1%BE%B0%E6%EB%E2%F7%C1%F7%FE%F7%F1%E6%B0%A8%A2%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%E0%F7%E1%FD%E7%E0%F1%F7%E1%BD%DF%F3%E8%F7%CD%F3%F1%F1%FB%FD%FC%F7%E1%CD%F7%E1%E3%E7%F7%FF%F3%BC%E2%FC%F5%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%FA%FB%E6%B0%A8%BF%A3%BE%B0%F7%E0%E0%FD%E0%B0%A8%BF%A3%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0%D7%FC%B2%F7%E1%E6%F7%B2%F7%E1%E3%E7%F7%FF%F3%B2%F6%F7%B2%F6%F7%E1%F1%FD%FF%E2%FD%E1%FB%F1%FBa%FC%B2%F6%F7%FE%B2%E4%FB%F6%F7%FD%F8%E7%F7%F5%FD%B2%DF%F3%E8%F7%B2-%E2%FD%E0%B2%E3%E7%7B%B2%FE%FE%F7%F5%F3%FC%B2%F6%FD%E1%B2%FE%7F%FC%F7%F3%E1%B2%F3%FE%B2%FD%F0%F8%F7%E6%FD%B2%E1%F3%FE%FB%F6%F3%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%C2%FD%E0%E3%E7%F7%B2%F7%FE%B2%F4%FD%FC%F6%FD%B2%F6%F7%FE%B2%DF%F3%E8%F7%B2%E2%E7%F7%F6%F7%B2%E1%F7%E0%B2%E6%F3%FF%F0%FB%7B%FC%B2%E7%FC%B2%FD%F0%F8%F7%E6%FD%B0%BE%B0%C2%FD%E0%E3%E7%F7%B2%F7%FE%B2%F7%FE%F7%FF%F7%FC%E6%FD%B2%E1%F3%FE%FB%F6%F3%B2%E2%E7%F7%F6%F7%B2%F1%E0%F7%F3%E0%E1%F7%B2%F1%FD%FF%FD%B2%E7%FC%B2%FD%F0%F8%F7%E6%FD%B2%FD%B2%E2%FB%FC%E6%F3%E0%E1%F7%B2%F7%FC%B2%F7%FE%B2%F4%FD%FC%F6%FD%B0%BE%B0%C2%FD%E0%E3%E7%F7%B2%F7%FE%B2%F7%FE%F7%FF%F7%FC%E6%FD%B2%E1%F3%FE%FB%F6%F3%B2%FC%FD%B2%E2%E7%F7%F6%F7%B2%E1%F7%E0%B2%F4%FD%FC%F6%FD%BE%B2%E2%F7%E0%FD%B2%E1%FB%B2%E7%FC%B2%FD%F0%F8%F7%E6%FD%B2%F6%F7%FE%B2%E4%FB%F6%F7%FD%F8%E7%F7%F5%FD%B0%BE%B0%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%D0%B0%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%A1%A7%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A3%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A1%BE%B0%E6%EB%E2%F7%C1%F7%FE%F7%F1%E6%B0%A8%A2%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%DB%FF%F3%F5%F7%FC%B2%E1%FD%F0%E0%F7%B2%FE%FD%E1%B2%F0%FE%FD%E3%E7%F7%E1%B2%F6%F7%E1%FD%E0%F6%F7%FC%F3%F6%FD%E1%B2%F6%F7%FE%B2%FF%F7%FC%E1%F3%F8%F7%B2%D5%F3%FF%F7%B2%DD%E4%F7%E0%B2%F6%F7%FE%B2%DF%F3%E8%F7%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%E0%F7%E1%FD%E7%E0%F1%F7%E1%BD%DF%F3%E8%F7%CD%F0%FE%FD%E3%E7%F7%E1%CD%FF%F7%FC%E1%F3%F8%F7%CD%D5%F3%FF%F7%CD%FD%E4%F7%E0%CD%F6%F7%E1%FD%E0%F6%F7%FC%F3%F6%FD%BC%E2%FC%F5%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%FA%FB%E6%B0%A8%BF%A3%BE%B0%F7%E0%E0%FD%E0%B0%A8%BF%A3%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0-%D3%B2%E3%E7%7B%B2%F6%FB%FCs%FF%FB%F1%F3%B2%F6%F7%FE%B2%E4%FB%F6%F7%FD%F8%E7%F7%F5%FD%B2%DF%F3%E8%F7%B2%F1%FD%E0%E0%F7%E1%E2%FD%FC%F6%F7%FC%B2%FE%FD%E1%B2%E1%FB%F5%E7%FB%F7%FC%E6%F7%E1%B2%F0%FE%FD%E3%E7%F7%E1%B2%F6%F7%E1%FD%E0%F6%F7%FC%F3%F6%FD%E1%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%D6%F7%E6%F7%F1%F1%FBa%FC%B2%F6%F7%B2%FE%F3%B2%E1%F3%FE%FB%F6%F3%B0%BE%B0%D6%F7%E6%F7%F1%F1%FBa%FC%B2%F6%F7%B2%FE%F3%B2%F0%FD%FE%F3%B0%BE%B0%D6%F7%E6%F7%F1%F1%FBa%FC%B2%F6%F7%B2%FE%F3%E1%B2%E2%F3%E0%F7%F6%F7%E1%B2%F6%F7%FE%B2%FE%F3%F0%F7%E0%FB%FC%E6%FD%B0%BE%B0%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%D1%B0%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%A1%A7%EF%BE%E9%B0%E6%EB%E2%F7%B0%A8%A3%BE%B0%E6%FB%FF%F7%B0%A8%A2%BE%B0%FC%E7%FF%F0%F7%E0%DD%E2%E6%FB%FD%FC%E1%B0%A8%A1%BE%B0%E6%EB%E2%F7%C1%F7%FE%F7%F1%E6%B0%A8%A2%BE%B0%EA%B0%A8%A2%BE%B0%EB%B0%A8%A2%BE%B0%F3%E7%E6%FA%FD%E0%B0%A8%B0%B0%BE%B0%F3%FE%E6%B0%A8%B0%DB%FF%F3%F5%F7%FC%B2%E3%E7%F7%B2%F6%F7%E1%F1%E0%FB%F0%F7%B2%FE%FD%E1%B2%F0%FE%FD%E3%E7%F7%E1%B2%F6%F7%B2%FF%FD%E4%FB%FF%FB%F7%FC%E6%FD%B2%F6%F7%FE%B2%DF%F3%E8%F7%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%A3%BE%B0%E7%E0%FE%B0%A8%B0%E0%F7%E1%FD%E7%E0%F1%F7%E1%BD%DF%F3%E8%F7%CD%FF%FD%E4%FB%FF%FB%F7%FC%E6%FD%BC%E2%FC%F5%B0%BE%B0%F3%E7%F6%FB%FD%B0%A8%B0%B0%BE%B0%FA%FB%E6%B0%A8%BF%A3%BE%B0%F7%E0%E0%FD%E0%B0%A8%BF%A3%BE%B0%FF%E1%F5%DA%FB%E6%B0%A8%B0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%B0%A8%B0%B0%BE%B0%E1%FD%E7%FC%F6%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%FF%F3%F5%F7%C4%FB%F6%F7%FD%B0%A8%A3%BE%B0%FB%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F4%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%E6%C1%FB%FE%F7%FC%E6%C4%FB%F6%F7%FD%B0%A8%A2%BE%B0%F7%C6%F7%EA%E6%B0%A8%B0%B0%BE%B0%E3%E7%F7%EA%E6%FB%FD%FC%B0%A8%B0-%C2%F3%E0%F3%B2%E3%E7%7B%B2%E1%F7%B2%E7%E1%F3%FC%B2%F7%E1%E6%FD%E1%B2%F0%FE%FD%E3%E7%F7%E1%B2%F6%F7%B2%E2%E0%FD%F5%E0%F3%FF%F3%F1%FBa%FC%B2%F6%F7%FE%B2%DF%F3%E8%F7%AD%B0%BE%B0%FD%E2%E6%FB%FD%FC%E1%B0%A8%C9%B0%D7%E1%E6%FD%E1%B2%F0%FE%FD%E3%E7%F7%E1%B2%FC%FD%B2%E2%F7%E0%E6%F7%FC%F7%F1%F7%FC%B2%F3%FE%B2%E4%FB%F6%F7%FD%F8%E7%F7%F5%FD%B2%DF%F3%E8%F7%B0%BE%B0%DF%FD%E4%FB%FF%FB%F7%FC%E6%FD%B2%F6%F7%B2%FE%F3%B2%F0%FD%FE%F3%B2%F1%FD%FC%B2%FE%F3%E1%B2%F4%FE%F7%F1%FA%F3%E1%B2%F6%FB%E0%F7%F1%F1%FB%FD%FC%F3%FE%F7%E1%B2%F6%F7%FE%B2%E6%F7%F1%FE%F3%F6%FD%B0%BE%B0%DF%FD%E4%FB%FF%FB%F7%FC%E6%FD%B2%F6%F7%B2%FE%F3%B2%E1%F3%FE%FB%F6%F3%B2%F1%FD%FC%B2%FE%F3%E1%B2%F4%FE%F7%F1%FA%F3%E1%B2%F6%FB%E0%F7%F1%F1%FB%FD%FC%F3%FE%F7%E1%B2%F6%F7%FE%B2%E6%F7%F1%FE%F3%F6%FD%B0%BE%B0%B0%CF%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%B0%A8%B0%D0%B0%BE%B0%E1%FD%FE%E7%E6%FB%FD%FC%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%B0%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F5%F7%C1%FA%FD%E5%B0%A8%A1%A7%EF%CF%BE%B0%FB%E1%C1%F1%FD%E0%FF%B0%A8%A2%BE%B0%E6%F7%EA%E6%D0%E7%E6%E6%FD%FC%C1%F1%FD%E0%FF%B0%A8%B0%D5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%E0%F7%E2%F7%F3%E6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%FB%E6%FE%F7%B0%A8%B0%B0%BE%B0%F1%E7%E1%E6%FD%FF%C1%F1%FD%E0%F7%B0%A8%F4%F3%FE%E1%F7%BE%B0%E6%F7%EA%E6%D3%F4%E6%F7%E0%B0%A8%B0%B0%BE%B0%E6%F7%EA%E6%D4%F7%F7%F6%D0%F3%F1%F9%B0%A8%B0%B0%BE%B0%F5%F3%FF%F7%DF%FD%F6%F7%B0%A8%A3%BE%B0%F4%F7%F7%F6%D0%F3%F1%F9%B0%A8%F4%F3%FE%E1%F7%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%D4%D0%B0%A8%A3%A2%A2%BE%B0%FD%E0%F6%F7%E0%B0%A8%A2%BE%B0%F1%E7%E1%E6%FD%FF%DF%F7%E1%E1%F3%F5%F7%E1%B0%A8%F4%F3%FE%E1%F7%BE%B0%E4%F7%E0%E1%FB%FD%FC%B0%A8%A1%BC%A3%BE%B0%E2%F7%E0%F1%F7%FC%E6%F3%F8%F7%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%A3%A2%A2%BE%B0%F3%E7%F6%FB%FD%D4%F7%F7%F6%D0%F3%F1%FA%B0%A8%F4%F3%FE%E1%F7%BE%B0%FF%FD%F6%F7%D0%FD%F3%E0%F6%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%B0%A8%F4%F3%FE%E1%F7%BE%B0%F7%E4%F3%FE%E7%F3%E6%FB%FD%FC%DB%D6%B0%A8%B0%B0%BE%B0%FB%F6%B0%A8%B0%A0%A2%A0%A6%AA%A0%AB%A3%A5%A6%A5%A0%AA%BF%A3%A0%A2%B0%BE%B0%FF%E1%F5%E1%B0%A8%E9%B0%FF%E1%F5%C0%F7%F3%F6%EB%B0%A8%B0-%C2%E0%F7%E2%F3%E0%F3%F6%FD%AD%B0%BE%B0%FF%E1%F5%C1%E6%F3%E0%E6%D5%F3%FF%F7%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F7%FF%E2%F7%E8%F3%E0%B0%BE%B0%FF%E1%F5%C1%E7%F0%FF%FB%E6%B0%A8%B0%D7%FC%E4%FB%F3%E0%B0%BE%B0%FF%E1%F5%D7%FC%E6%F7%E0%D1%FD%F6%F7%B0%A8%B0%DB%FC%E6%E0%FD%F6%E7%E8%F1%F3%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%D1%FD%F6%F7%B0%A8%B0%D7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B2%FC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B0%BE%B0%FF%E1%F5%D5%F3%FF%F7%DD%E4%F7%E0%B0%A8%B03%D4%FB%FC%B2%F6%F7%B2%FE%F3%B2%E2%F3%E0%E6%FB%F6%F3%B3%B0%BE%B0%FF%E1%F5%D1%FE%E7%F7%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%E2%FB%E1%E6%F3%B2%F7%E1%A8%B0%BE%B0%FF%E1%F5%DC%F7%E5%D5%F3%FF%F7%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F7%FF%E2%F7%E8%F3%E0%B2%FD%E6%E0%F3%B2%E2%F3%E0%E6%FB%F6%F3%B0%BE%B0%FF%E1%F5%CB%FD%E7%DA%F3%E1%B0%A8%B0%C6%FB%F7%FC%F7%B2%B7%A3%B2%F3%F1%FB%F7%E0%E6%FD%E1%B2%EB%B2%B7%A0%B2%F4%F3%FE%FE%FD%E1%B0%BE%B0%FF%E1%F5%D1%FD%F6%F7%D3%F1%F1%F7%E1%E1%B0%A8%B0%D1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%D3%F5%F3%FB%FC%B0%A8%B0%D8%E7%F5%F3%E0%B2%FD%E6%E0%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%C0%F7%E3%E7%FB%E0%F7%F6%D3%F1%F1%F7%E1%E1%D9%F7%EB%B0%A8%B0%D7%E1%B2%FC%F7%F1%F7%E1%F3%E0%FB%FD%B2%F7%FE%B2%F1a%F6%FB%F5%FD%B2%F6%F7%B2%F3%F1%F1%F7%E1%FD%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%DE%FD%FD%F9%FB%FC%F5%B0%A8%B03%D5%F7%FC%FB%F3%FE%B3%B2%DE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B2%E3%E7%F7%B2%F7%E1%E6%F3%F0%F3%B2%F0%E7%E1%F1%F3%FC%F6%FD%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%E6%F3%E0%E6%B0%A8%B0%C2%E7%FE%E1%F7%B2%F3%E3%E7%7F%B2%E2%F3%E0%F3%B2%F8%E7%F5%F3%E0%B0%BE%B0%FF%E1%F5%D7%E0%E0%FD%E0%E1%B0%A8%B0%D7%E0%E0%FD%E0%F7%E1%B0%BE%B0%FF%E1%F5%DA%FB%E6%E1%B0%A8%B0%D3%F1%FB%F7%E0%E6%FD%E1%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%DF%FB%FC%FB%FF%FB%E8%F7%B0%A8%B0%DF%FB%FC%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%DF%F3%EA%FB%FF%FB%E8%F7%B0%A8%B0%DF%F3%EA%FB%FF%FB%E8%F3%E0%B0%BE%B0%FF%E1%F5%C6%FB%FF%F7%B0%A8%B0%C6%FB%F7%FF%E2%FD%B2%E2%FD%E0%B2%E2%E0%F7%F5%E7%FC%E6%F3%B0%BE%B0%FF%E1%F5%DE%FB%E4%F7%B0%A8%B0%C4%FB%F6%F3%B0%BE%B0%FF%E1%F5%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C2%F3%FC%E6%F3%FE%FE%F3%B2%D1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%D7%EA%FB%E6%D4%E7%FE%FE%C1%F1%E0%F7%F7%FC%B0%A8%B0%C1%F3%FE%FB%E0%B2%F6%F7%FE%B2%FF%FD%F6%FD%B2%E2%F3%FC%E6%F3%FE%FE%F3%B2%F1%FD%FF%E2%FE%F7%E6%F3%B0%BE%B0%FF%E1%F5%DC%E7%FF%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B0%DCh%FF%F7%E0%FD%B2%F6%F7%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B0%BE%B0%FF%E1%F5%DC%FD%DB%FF%F3%F5%F7%B0%A8%B0%C2%E0%F7%F5%E7%FC%E6%F3%B2%E1%FB%FC%B2%FB%FFs%F5%F7%FC%F7%E1%B0%BE%B0%FF%E1%F5%D1%FD%FD%FE%B0%A8%B03%D0%FB%F7%FC%B3%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%C6%B0%A8%B0%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%A1%A1%A2%B2%E2%E7%FC%E6%FD%E1%B0%BE%B0%FF%E1%F5%DE%FD%E1%F7%DE%FB%E4%F7%B0%A8%B0%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%E7%FC%F3%B2%E4%FB%F6%F3%B0%BE%B0%FF%E1%F5%DE%FD%E1%E6%DE%FB%E4%F7%E1%B0%A8%B03%DA%F3%B2%E2%F7%E0%F6%FB%F6%FD%B2%E6%FD%F6%F3%E1%B2%E1%E7%E1%B2%E4%FB%F6%F3%E1%B3%B0%BE%B0%FF%E1%F5%D3%FE%FE%C3%E7%F7%E1%E6%FB%FD%FC%E1%B0%A8%B03%D1%FD%FF%E2%FE%F7%E6%F3%F6%F3%E1%B2%FE%F3%E1%B2%E2%E0%F7%F5%E7%FC%E6%F3%E1%B3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F7%E1%B0%A8%B03%D1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%D7%EA%F1%F7%FE%F7%FC%E6%F7%B3%B2%EE%B23%D5%F7%FC%FB%F3%FE%B3%B2%EE%B23%DF%E7%EB%B2%F0%FB%F7%FC%B3%B2%EE%B23%C2%F7%E0%F4%F7%F1%E6%FD%B3%B0%BE%B0%FF%E1%F5%D4%F3%FB%FE%E7%E0%F7%E1%B0%A8%B03%DC%FD%B2%F7%E0%F3%B2%F7%E1%FD%B3%B2%EE%B23%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DC%FD%B2%F7%E1%B2%F1%FD%E0%E0%F7%F1%E6%FD%B3%B2%EE%B23%DE%FD%B2%E1%F7%FC%E6%FB%FF%FD%E1%B3%B2%EE%B23%D7%E0%E0%FD%E0%B3%B0%BE%B0%FF%E1%F5%DC%FD%E6%DC%F7%E6%E5%FD%E0%F9%B0%A8%B0%D3%B2%F7%E1%E6%F7%B2%F8%E7%F7%F5%FD%B2%E1a%FE%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%F1%FD%FC%B2%F1%FD%FC%F7%EA%FBa%FC%B2%F3%B2%FB%FC%E6%F7%E0%FC%F7%E6%BC%B0%BE%B0%FF%E1%F5%D7%FC%F6%D5%F3%FF%F7%C1%F1%FD%E0%F7%B0%A8%B0%DB%FC%FB%F1%FB%F3%B2%F7%FE%B2%F8%E7%F7%F5%FD%BC%BC%BC%B0%BE%B0%FF%E1%F5%C1%F1%FD%E0%F7%C1%F1%FD%E0%FF%B0%A8%B0%DE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%FC%FD%B2%E1%F7%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E2%FD%E0%E3%E7%F7%B2%F7%E1%E6%F3%B2%E2s%F5%FB%FC%F3%B2%FC%FD%B2%F4%FD%E0%FF%F3%B2%E2%F3%E0%E6%F7%B2%B2%F6%F7%B2%E7%FC%B2%E2%F3%E3%E7%F7%E6%F7%B2%C1%D1%DD%C0%DF%BC%B0%BE%B0%FF%E1%F5%C3%E7%F7%E1%E6%FB%FD%FC%B0%A8%B0%C2%E0%F7%F5%E7%FC%E6%F3%B0%BE%B0%FF%E1%F5%D3%FC%E1%E5%F7%E0%B0%A8%B0%D1%FD%FF%E2%E0%FD%F0%F3%E0%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%C1%F1%FD%E0%F7%B0%A8%B03%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E7%FC%F3%B2%E4%F7%E8%B3%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%B0%A8%B0%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%B0%BE%B0%FF%E1%F5%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%DB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%CB%FD%E7%C1%F1%FD%E0%F7%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D3%E7%E6%FA%FD%E0%B0%A8%B0%D3%E7%E6%FD%E0%B0%BE%B0%FF%E1%F5%DD%FC%FE%EB%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B2%C1a%FE%FD%B2%E2%E7%F7%F6%F7%B2%F8%E7%F5%F3%E0%B2%E7%FC%F3%B2%E4%F7%E8%BC%B0%BE%B0%FF%E1%F5%C1%F3%E4%F7%D3%E7%E6%FD%B0%A8%B0%C1%E7%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E1%F7%B2%F5%E7%F3%E0%F6%F3%E0s%B2%F3%E7%E6%FD%FFs%E6%FB%F1%F3%FF%F7%FC%E6%F7%B2%F6%F7%E1%E2%E7%7B%E1%B2%F6%F7%B2%F1%F3%F6%F3%B2%E2%E0%F7%F5%E7%FC%E6%F3%BC%B0%BE%B0%FF%E1%F5%C1%F7%E4%F7%E0%F3%FE%C1%F1%FD%E0%F7%B0%A8%B0%C2%E7%F7%F6%F7%B2%F5%E7%F3%E0%F6%F3%E0%B2%FE%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%E6%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%F1%FD%FF%FD%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%CB%FD%E7%DE%F3%E1%E6%C1%F1%FD%E0%F7%B0%A8%B0%DE%F3%B2h%FE%E6%FB%FF%F3%B2%E2%E7%FC%E6%E7%F3%F1%FBa%FC%B2%F5%E7%F3%E0%F6%F3%F6%F3%B2%F7%E1%B0%BE%B0%FF%E1%F5%D3%F1%E6%FB%E6%EB%D1%FD%FF%E2%FE%EB%B0%A8%B0%CB%F3%B2%FA%F3%B2%E0%F7%F3%FE%FB%E8%F3%F6%FD%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%BC%B0%BE%B0%FF%E1%F5%C2%FE%F3%EB%C1%F7%E4%F7%E0%F3%FE%C6%FB%FF%F7%E1%B0%A8%B0%C2%E7%F7%F6%F7%B2%E0%F7%F3%FE%FB%E8%F3%E0%B2%F7%E1%E6%F3%B2%F3%F1%E6%FB%E4%FB%F6%F3%F6%B2%F1%E7%F3%FC%E6%F3%E1%B2%E4%F7%F1%F7%E1%B2%E3%E7%FB%F7%E0%F3%B0%BE%B0%FF%E1%F5%C6%E0%EB%D3%F5%F3%FB%FC%B0%A8%B0%DC%F7%F1%F7%E1%FB%E6%F3%B2%F3%FE%B2%FF%F7%FC%FD%E1%B2%E7%FC%B2%B7%E1%B7%B2%F6%F7%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B2%F1%FD%E0%E0%F7%F1%E6%F3%E1%B2%E2%F3%E0%F3%B2%F1%FD%FC%E1%F7%F5%E7%FB%E0%B2%FE%F3%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%BC%B2%C4%E7%F7%FE%E4%F3%B2%F3%B2%FB%FC%E6%F7%FC%E6%F3%E0%FE%FD%BC%B0%BE%B0%FF%E1%F5%C4%FB%F6%F7%FD%DB%FC%E6%E0%FD%B0%A8%B0%C4%7F%F6%F7%FD%B2%F6%F7%B2%FB%FC%E6%E0%FD%F6%E7%F1%F1%FBa%FC%B0%BE%B0%FF%E1%F5%D1%FE%FD%E1%F7%B0%A8%B0%D1%F7%E0%E0%F3%E0%B0%BE%B0%FF%E1%F5%DD%E2%E6%FB%FD%FC%B0%A8%B0%DD%E2%F1%FBa%FC%B0%BE%B0%FF%E1%F5%C0%FB%F1%F9%C6%F7%EA%E6%B0%A8%B0%C6%F7%EA%E6%FD%B2%F7%FC%E0%FB%E3%E7%F7%F1%FB%F6%FD%B0%BE%B0%FF%E1%F5%C7%E1%F7%D4%E7%FE%DB%FC%F4%FD%E0%FF%F3%E6%FB%FD%FC%B0%A8%B0%F7%B2%FB%FC%F4%FD%E0%FF%F3%F1%FBa%FC%B2%E3%E7%F7%B2%E1%F7%E0s%B2%FF%E7%EB%B2h%E6%FB%FE%B0%BE%B0%FF%E1%F5%DE%FD%F3%F6%FB%FC%F5%B0%A8%B0%D1%F3%E0%F5%F3%FC%F6%FD%BC%B2%D7%E1%E2%F7%E0%F7%BE%B2%E2%FD%E0%B2%F4%F3%E4%FD%E0%BC%BC%BC%B0%BE%B0%FF%E1%F5%DD%E0%F6%F7%E0%E1%B0%A8%B0%DD%E0%F6%F7%FC%F3%B2%E6%FD%F6%F3%E1%B2%FE%F3%E1%B2%E0%F7%E1%E2%E7%F7%E1%E6%F3%E1%B0%BE%B0%FF%E1%F5%DB%FC%F6%FB%F1%F3%E6%F7%C5%FD%E0%F6%B0%A8%B0%C2%E0%FD%E2%FD%E0%F1%FB%FD%FC%F7%B2%E7%FC%F3%B2%E2%F3%FE%F3%F0%E0%F3%B2%FD%B2%F7%EA%E2%E0%F7%E1%FBa%FC%B0%BE%B0%FF%E1%F5%DF%FD%E4%F7%DD%FC%F7%B0%A8%B0%C2%F3%E1%F3%E0%B0%BE%B0%FF%E1%F5%C2%FD%FB%FC%E6%E1%B0%A8%B0%E2%E7%FC%E6%FD%E1%B0%BE%B0%FF%E1%F5%D3%E7%F6%FB%FD%B0%A8%B0%D3%E7%F6%FB%FD%B0%BE%B0%FF%E1%F5%D1%FD%E0%E0%F7%F1%E6%B0%A8%B0%D1%FD%E0%E0%F7%F1%E6%FD%B0%BE%B0%FF%E1%F5%DB%FC%F1%FD%E0%E0%F7%F1%E6%B0%A8%B0%DB%FC%F1%FD%E0%E0%F7%F1%E6%FD%B0%BE%B0%FF%E1%F5%C7%FC%F1%FD%FF%E2%FE%F7%E6%F7%F6%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%F1%FD%FF%E2%FE%F7%E6%F3%F6%F3%B0%BE%B0%FF%E1%F5%C1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C7%FC%E1%E7%F1%F1%F7%E1%E1%F4%E7%FE%D3%F1%E6%FB%E4%FB%E6%EB%B0%A8%B0%D3%F1%E6%FB%E4%FB%F6%F3%F6%B2%FC%FD%B2%E1%E7%E2%F7%E0%F3%F6%F3%BC%B2%C2%E7%FC%E6%E7%F3%F1%FBa%FC%A8%B2%B7%E1%B0%BE%B0%FF%E1%F5%C6%EB%E2%F7%D5%F3%FF%F7%B0%A8%B0%C1%F7%FE%F7%F1%F1%FB%FD%FC%F3%B0%EF%EF</div><a href="../content/resources/Maze_meta.png" class="js-hidden selecciona-LinkImages">0</a><a href="../content/resources/Maze_inicio.png" class="js-hidden selecciona-LinkImages">1</a><a href="../content/resources/Maze_acciones_esquema.png" class="js-hidden selecciona-LinkImages">2</a><a href="../content/resources/Maze_bloques_mensaje_Game_over_desordenado.png" class="js-hidden selecciona-LinkImages">3</a><a href="../content/resources/Maze_movimiento.png" class="js-hidden selecciona-LinkImages">4</a><div class="selecciona-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article><article id="block-mtq577of-sm0uffqbi" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/write.png" alt="">
+</div>
+<h1 class="box-title">Diseña un laberinto con mayor dificultad</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-c2lgjhfl8" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="../content/resources/laberinto.1.png" alt="Imagen de un laberinto mejorado" title="Laberinto de mayor dificultad" width="200" height="200" style="float: left;"></p>
+<p style="text-align: justify;">Con la herramienta pintar, prepara un laberinto con mayor dificultad.</p>
+<p style="text-align: justify;">Hasta ahora el laberinto que has visto sólo tiene un único camino para llegar a la salida y está pintado con bloques gruesos, pero si utilizas bloques más finos o líneas&nbsp; gruesas tal vez puedas dibujar distintos caminos alternativos. ¿Y si alguno de ellos no llevan a la salida? Entonces estaríamos ante un auténtico laberinto.</p>
+<p style="text-align: justify;">Diseña un laberinto más largo o con distintos recorridos con la herramienta pintar de Scratch.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mtq577of-hizooqan0" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/write.png" alt="">
+</div>
+<h1 class="box-title">Mejoras y cambios del videojuego Maze</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-s91nze72g" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Te propongo varias opciones, elige aquellas que consideres importantes para mejorar el juego.</p>
+<div class="exe-fx exe-accordion">
+<h2>Mensaje ¡Has ganado!</h2>
+<p style="text-align: justify;">¿Cómo crees que será el videojuego si le añades un mensaje final cuando se consigue el objetivo?</p>
+<p style="text-align: justify;">Le aportarás una mejor estética.</p>
+<p style="text-align: justify;">Podrás ser original en su diseño, aunque puedes empezar por un simple mensaje ¡Has ganado!</p>
+<p style="text-align: justify;">Para crear el mensaje puedes emplear distintas opciones, desde un mensaje que sea dicho por un personaje, como un objeto o un fondo que sólo se muestre al final.&nbsp;</p>
+<p style="text-align: justify;">Para tu videojuego elige la opción que te guste más.</p>
+<p style="text-align: center;"><img src="../content/resources/Maze_ganaste.png" alt="Imagen del resultado del mensaje ganaste Maze" title="Mensaje ganaste del Maze" width="611" height="286"></p>
+<h2>Mensaje ¡Has perdido!</h2>
+<p style="text-align: justify;">Que el videojuego tenga un mensaje final cuando no se consigan los objetivos planteados.</p>
+<p style="text-align: justify;">Puedes utilizar tu imaginación para crear un mensaje original. Usualmente se usa el famoso "Game over".</p>
+<p style="text-align: justify;">Al igual que para el mensaje anterior tienes las mismas opciones para crearlo lo único que cambiará serán las condiciones para mostrarlo.</p>
+<p style="text-align: center;">&nbsp;<img src="../content/resources/Maze_perdido.png" alt="Imagen que muestra mensaje has perdido del Maze" title="Mensaje has perdido del Maze" width="613" height="286"></p>
+<h2>Aporta tu propia mejora</h2>
+<p style="text-align: justify;">Piensa junto a tus compañeras y compañeros en posibles mejora para el videojuego. Toma nota de aquellas en tu cuaderno de aquellas que te resulten interesantes.</p>
+</div>
+<p style="text-align: justify;">Para estas mejoras te propongo utilizar los siguientes bloques, coloca los bloques de la derecha en el lugar adecuado del conjunto de bloques de la izquierda y piensa a qué objeto corresponden.</p>
+<div class="exe-fx exe-paginated">
+<h2>1 Mensaje ¡Has ganado!</h2>
+<p><img src="../content/resources/Maze_bloques_ganado_desordenado.png" alt="Imagen que representa bloques añadir mensaje has ganado al Maze" title="Bloques del mensaje has ganado Maze desordenado" style="display: block; margin-left: auto; margin-right: auto;" width="679" height="190"></p>
+<p style="text-align: center;"><iframe width="758" height="413" src="https://blogsaverroes.juntadeandalucia.es/ejerciciosrea/wp-admin/admin-ajax.php?action=h5p_embed&id=1644" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<script src="https://blogsaverroes.juntadeandalucia.es/ejerciciosrea/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js" charset="UTF-8"></script>
+</p>
+<h2>2 Mensaje ¡Has perdido!</h2>
+<p style="text-align: justify;">Puedes modificar el videojuego para que el jugador pierda la partida si se tocan las paredes del laberinto. Así habrás aumentado la dificultad del juego.&nbsp; &nbsp;</p>
+<p style="text-align: justify;">Ordena los siguientes bloques de programación y averigua a qué objeto pertenecen.</p>
+<img src="../content/resources/Maze_bloques_mensaje_Game_over_desordenado.png" alt="Imagen que representa el código del mensaje has perdido desordenado Maze" title="Bloques del mensaje has perdido desordenado del Maze" style="display: block; margin-left: auto; margin-right: auto;" width="836" height="441"></div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con las mejoras?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>A continuación de doy algunas ideas que te pueden ayudar con tu programa.</p>
+<div class="exe-fx exe-paginated" style="text-align: justify;">
+<h2>1 Mensaje ¡Has ganado!</h2>
+<p style="text-align: justify;">Ya sabes que hay múltiples formas de programar para conseguir un mismo fin. Al igual que existen muchos caminos diferentes para desplazarnos de un sitio a otro, aunque normalmente escogemos uno por algún motivo. En muchas ocasiones será porque es el más corto.&nbsp;</p>
+<p style="text-align: justify;">En programación funcionamos de forma similar, intentaremos usar el menor número de bloques posibles. No te preocupes que con la práctica verás como cada vez tus programas son más cortos.</p>
+<p style="text-align: justify;">Una posible combinación de bloques para un mensaje ¡Has ganado! como un fondo y que se dicho por un personaje. ¿Sabrías a que objeto u fondo se le puede asignar esta programación?</p>
+<p><img src="../content/resources/Maze_bloques_ganado_solucion.png" alt="Imagen que representa los bloques del mensaje has ganado Maze" title=" Bloques del mensaje has ganado Maze" style="display: block; margin-left: auto; margin-right: auto;" width="401" height="257"></p>
+<p style="text-align: justify;">Otra forma de conseguir el mismo resultado con otros bloques:</p>
+<ul>
+<li style="text-align: justify;">Crea un objeto con el mensaje "¡Has ganado!".</li>
+<li>Crea el objeto con la herramienta Pinta.</li>
+<li style="text-align: justify;">Prográmalo para que inicialmente se encuentre oculto y sólo se muestre cuando reciba un mensaje que el jugador ha ganado.</li>
+</ul>
+<p><img src="../content/resources/Maze_mensaje_ganador_objeto.png" alt="Imagen del mensaje ganador bloques para el Maze" title="Mensaje ganador con bloques para el Maze" width="600" height="278" style="display: block; margin-left: auto; margin-right: auto;"></p>
+<ul>
+<li style="text-align: justify;">Prográmalo para que inicialmente se encuentre oculto y sólo se muestre cuando reciba un mensaje que el jugador ha ganado.</li>
+</ul>
+<p style="text-align: center;"><strong><img src="../content/resources/Maze_bloques_ganador_objeto.png" alt="Imagen de los bloques mensaje ganador para el Maze" title="Bloques del mensaje ganador para el Maze" width="528" height="207"></strong></p>
+<h2>2 Mensaje ¡Has perdido!</h2>
+&nbsp; &nbsp;Al igual que en el caso anterior, este mensaje se puede crear de cualquiera de las formas vistas. A continuación tienes un posible conjunto de bloques, aunque debes averiguar a si corresponden a un objeto o fondo.&nbsp;<br><img src="../content/resources/Maze_bloques_mensaje_ganado_solucion.png" alt="Imagen representa el código del mensaje has perdido del Maze" title="Bloques del mensaje has perdido del Maze" style="display: block; margin-left: auto; margin-right: auto;" width="391" height="438">
+<h2>3 Otras ideas para tú mejora</h2>
+&nbsp;Piensa en alguna otra modificación que mejore la jugabilidad del videojuego, por ejemplo, introduce nuevos obstáculos en el laberinto o enemigos que al tocar la bola se pierda la partida. ¡Seguro que a estas alturas se te ocurre alguna mejora más!&nbsp;</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mtq577of-1p8idajvy" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/write.png" alt="">
+</div>
+<h1 class="box-title">Crea tu propio videojuego Laberinto (Maze)</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-kovqkmzlv" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Si quieres <strong>crear</strong> tu propio&nbsp;videojuego&nbsp;<strong>Maze</strong>&nbsp;con Scratch, sólo debes seguir el siguiente proceso:&nbsp;abre&nbsp;un proyecto nuevo en Scratch y&nbsp;crea todos los elementos del videojuego.</p>
+<p style="text-align: justify;">Para empezar a crear el videojuego, recuerda que los nuevos proyectos de Scratch comienzan con un fondo blanco y un gato. Pero puedes borrarlo y personalizarlo todo.&nbsp;</p>
+<p style="text-align: justify;">Además, necesitamos diseñar al menos dos objetos, una bola y una salida, además del laberinto, antes de pasar a programar el videojuego "<strong>Laberinto</strong>".</p>
+<p>Abre el programa <a href="https://scratch.mit.edu/projects/editor" target="_blank" title="Accede al portal de Scratch" rel="noopener">Scratch.mit.edu</a> y ¡manos a la obra!.</p>
+<div class="exe-fx exe-paginated">
+<h2 style="text-align: justify;">1- Creación de los elementos</h2>
+<p style="text-align: justify;">Los elementos del juego se pueden obtener de la galería o crear con la herramienta <em>Pinta</em> de Scratch. Una vez que los tenemos creados podemos empezar a programarlos.</p>
+<p style="text-align: justify;">En la siguiente imagen puedes apreciar todos los elementos en su conjunto.</p>
+<p style="text-align: justify;">Haz clic sobre la imagen para verla mejor.</p>
+<figure class="exe-figure exe-image position-center license-CC-BY-NC-SA" style="width: 620px;"><img src="../content/resources/Maze_editor.png" alt="Imagen que describe el entorno de Scratch" title="Entorno de Scratch" width="620" height="320" hspace="auto" style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto;"></figure>
+<h2 style="text-align: justify;">2- Crea el laberinto o fondo del juego</h2>
+<p style="text-align: justify;">Para&nbsp;<strong>diseñar el laberinto lo haremos </strong>como un<strong>&nbsp;fondo</strong>&nbsp;para el Escenario que<strong>&nbsp;será la pantalla principal </strong>del videojuego.</p>
+<p style="text-align: justify;">Podremos <strong>buscar</strong> una laberinto ya creado o podemos recurrir a la herramienta <em>Pinta</em>&nbsp;de Scratch, para <strong>diseñar</strong> el laberinto, con un recorrido&nbsp;desde la <strong>entrada</strong> a la <strong>salida</strong> del mismo.</p>
+<p style="text-align: justify;">Puedes dibujar líneas gruesas o rectángulos como paredes hasta completar una trayectoria para la bola que lleve hasta la salida del laberinto.&nbsp;</p>
+<p style="text-align: justify;">Por último, ten presente que el color de las paredes del laberinto es importante, utiliza el mismo color para facilitar la programación.</p>
+<p style="text-align: justify;">Haz clic sobre la imagen para verla mejor.</p>
+<p style="text-align: center;"><img src="../content/resources/Maze_laberinto.png" alt="Imagen  del laberinto del videojuego Laberinto o Maze" title="Laberinto del videojuego Maze" width="518" height="267"></p>
+<p style="text-align: justify;">Un posible recorrido puede ser el siguiente.</p>
+<p><img src="../content/resources/laberinto_diseno.PNG" alt="Imagen que representa el Laberinto" title="El laberinto del videojuego Maze" style="display: block; margin-left: auto; margin-right: auto;" width="617" height="389"></p>
+<h2 style="text-align: justify;">3- Crea y programa la salida o meta</h2>
+<p style="text-align: justify;">Al <strong>final</strong> del laberinto tendremos la <strong>salida</strong>. El personaje <strong>principal</strong> debe <strong>alcanzar</strong> esta <strong>salida</strong> para conseguir <strong>vencer</strong> en este videojuego.&nbsp;</p>
+<p style="text-align: justify;">La <strong>salida</strong> la puedes crear como un <strong>objeto</strong> o como <strong>parte</strong> del <strong>fondo</strong> del juego. En el primer caso, el juego finaliza cuando la bola toque ese objeto y en el segundo caso cuando toque el color de la salida. En este segundo caso, es importante que el color de la salida sea diferente al del resto del laberinto.</p>
+<p><img src="../content/resources/salida.PNG" alt="Imagen que describe la salida del videojuego Maze" title="La salida del videojuego Maze" style="display: block; margin-left: auto; margin-right: auto;" width="604" height="354"></p>
+<p style="text-align: justify;">Podemos programar algo similar al siguiente conjunto de bloques para el objeto <strong>salida</strong> o meta que estará estático en la salida del laberinto.</p>
+<p style="text-align: justify;">Si la <strong>bola</strong> <strong>toca</strong> este <strong>objeto</strong>, el <strong>videojuego</strong> se <strong>detendrá</strong>, terminando la partida.</p>
+<p><img src="../content/resources/Maze_meta.png" alt="Imagen que describe los bloques de la salida del Maze" title="Bloques de la salida del Maze" style="display: block; margin-left: auto; margin-right: auto;" width="285" height="231"></p>
+<h2 style="text-align: justify;">4- Crea y programa el objeto principal o bola</h2>
+<p style="text-align: justify;">Podemos elegir como objeto principal un objeto de la <strong>Galería</strong> de Scratch o iremos a la herramienta <strong>Pinta</strong>, <strong>para diseñar el personaje. </strong>Lo más sencillo es que sea una<strong> bola.&nbsp;</strong></p>
+<p><img src="../content/resources/personaje.PNG" alt="Imagen del diseño de la bola del Maze" title="Diseño bola del Maze" style="display: block; margin-left: auto; margin-right: auto;" width="964" height="651"></p>
+<p style="text-align: justify;">Añadimos al escenario el objeto que utilizaremos como bola y ajustaremos el tamaño deseado. Este objeto tiene <strong>tres</strong> <strong>acciones</strong> diferentes que realizar:</p>
+<p style="text-align: justify; padding-left: 30px;"><strong>4.1- Posición inicial </strong>de la<strong> bola,</strong> que ocupará la posición (X=-205, Y=147), cada vez que comience el juego.&nbsp;</p>
+<p style="padding-left: 30px;"><img src="../content/resources/Maze_inicio.png" alt="Imagen que representa bloques posición inicial bola del Maze" title=" Bloques posición inicial bola del Maze" style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto;" width="156" height="95"></p>
+<p style="text-align: justify; padding-left: 30px;"><strong>4.2- </strong>El<strong> contacto </strong>con las<strong> paredes </strong>del<strong> laberinto</strong>, provoca un movimiento en sentido contrario de la bola a una velocidad constante.</p>
+<p style="text-align: justify; padding-left: 30px;"><img src="../content/resources/Maze_rebote.png" style="display: block; margin-left: auto; margin-right: auto;" width="466" height="205" alt="Imagen de los bloques del rebote de bola del Maze" title="Bloques del rebote de bola del Maze"></p>
+<p style="text-align: justify; padding-left: 30px;"><strong>4.3- </strong>La<strong> bola </strong>se<strong> mueve</strong> con las<strong> flechas direccionales </strong>del<strong> teclado.</strong> En este caso optamos por realizar movimientos en cuatro direcciones -90, 0, 90, 180 grados.</p>
+<p><img src="../content/resources/Maze_movimiento.png" alt="Imagen de los bloques de movimientos de la bola del Maze" style="display: block; margin-left: auto; margin-right: auto;" width="434" height="257" title="Bloques de movimientos de la bola del Maze"></p>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/41-como-funciona-el-pong.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/43-y-el-fish-chomp-como-funciona.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

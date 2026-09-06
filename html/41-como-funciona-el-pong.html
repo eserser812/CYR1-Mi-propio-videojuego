@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mtq577od-r7o7nfkx3">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.3">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+<title>4.1. ¿Cómo funciona el Pong? | Mi propio videojuego</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Contenidos de la asignatura de Computación y Robótica para 1º de ESO sobre la creación de un videojuego con el programa Scratch">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260906202553G0H67Z","packageTitle":"Mi propio videojuego","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/udl-content/udl-content.js"></script><link rel="stylesheet" href="../idevices/udl-content/udl-content.css">
+<script src="../idevices/form/form.js"></script><link rel="stylesheet" href="../idevices/form/form.css">
+<script src="../libs/exe_effects/exe_effects.js"> </script>
+<link rel="stylesheet" href="../libs/exe_effects/exe_effects.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mtq577od-r7o7nfkx3" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">MI PROPIO VIDEOJUEGO</a>
+</li>
+<li> <a href="../html/1-creamos-un-videojuego.html" class="no-ch">1. ¿Creamos un videojuego?</a>
+</li>
+<li> <a href="../html/2-activa-tu-sentido-gamer-.html" class="no-ch">2. Activa tu sentido gamer </a>
+</li>
+<li> <a href="../html/3-como-se-crea-un-videojuego.html" class="no-ch">3. ¿Cómo se crea un videojuego?</a>
+</li>
+<li class="current-page-parent"> <a href="../html/4-explorando-los-videojuegos.html" class="daddy">4. Explorando los videojuegos</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/41-como-funciona-el-pong.html" class="active no-ch">4.1. ¿Cómo funciona el Pong?</a>
+</li>
+<li> <a href="../html/42-veamos-como-funciona-el-maze.html" class="no-ch">4.2. Veamos cómo funciona el Maze</a>
+</li>
+<li> <a href="../html/43-y-el-fish-chomp-como-funciona.html" class="no-ch">4.3. Y el Fish Chomp ¿cómo funciona?</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/5-la-importancia-de-la-interactividad-.html" class="no-ch">5. La importancia de la interactividad </a>
+</li>
+<li> <a href="../html/6-mejora-tu-videojuego-con-las-variables.html" class="no-ch">6. Mejora tu videojuego con las variables</a>
+</li>
+<li> <a href="../html/7-sacale-partido-a-los-clones.html" class="no-ch">7. Sácale partido a los clones</a>
+</li>
+<li> <a href="../html/8-a-realizar-el-videojuego.html" class="no-ch">8. A realizar el videojuego</a>
+</li>
+<li> <a href="../html/9-presentamos-nuestro-juego.html" class="no-ch">9. Presentamos nuestro juego</a>
+</li>
+<li> <a href="../html/10-sacamos-conclusiones.html" class="no-ch">10. Sacamos conclusiones</a>
+</li>
+<li> <a href="../html/i-guia-didactica.html" class="no-ch">I. Guía didáctica</a>
+</li>
+<li> <a href="../html/iicreditos.html" class="no-ch">II.Créditos</a>
+</li>
+</ul>
+</nav><main id="page-mtq577od-r7o7nfkx3" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">6</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">16</strong></span></p>
+
+<div class="package-header"><p class="package-title">Mi propio videojuego</p></div>
+<div class="page-header"><h1 class="page-title">4.1. ¿Cómo funciona el Pong?</h1></div>
+</header><div id="page-content-page-mtq577od-r7o7nfkx3" class="page-content">
+<article id="block-mtq577oe-83krpnwg8" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577oe-0vu54b5aa" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p><img src="../content/resources/retor_escolares_conbocadillo.gif" title="RETOR" style="float: left; margin-right: 10px; margin-left: 10px;" alt="La imagen describe a Retor" width="250" height="250"><strong></strong><strong></strong></p>
+<p style="text-align: justify;">Vamos&nbsp; a empezar viendo el&nbsp;<strong>funcionamiento</strong>&nbsp;de su mecánica fundamental y los&nbsp;<strong>elementos</strong> del&nbsp;<strong>videojuego Pong en Scratch, </strong>veremos sus características más destacables, como podemos&nbsp;diseñar sus elementos&nbsp; y crear tu propia versión del videojuego.</p>
+<p style="text-align: justify;">También pondremos en práctica tus conocimientos para&nbsp;encontrar errores de funcionamiento en el videojuego&nbsp;&nbsp;y&nbsp;finalmente aprenderemos a realizarle algunas&nbsp;modificaciones.</p>
+<p style="text-align: center;"><span style="font-size: 18pt; font-family: 'comic sans ms', sans-serif; color: #993366;"><strong>¡Adelante con él!</strong></span></p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mtq577oe-3e1tdtwih" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/share.png" alt="">
+</div>
+<h1 class="box-title">Cómo funciona el videojuego Pong</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577oe-3irc1yv7g" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-representation"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Recuerda que ya exploramos el funcionamiento del&nbsp;videojuego&nbsp;Pong, en la página <em>3. Explorando los videojuegos</em>, ahora vamos a analizar su funcionamiento&nbsp;para la&nbsp;versión de un jugador.&nbsp;</p>
+<div class="exe-fx exe-paginated">
+<h2>Funcionamiento de la mecánica fundamental</h2>
+<p style="text-align: justify;">El videojuego <strong>consiste</strong> en hacer <strong>rebotar</strong> una <strong>bola</strong>&nbsp;sobre una <strong>pala,</strong>&nbsp;con el <strong>objetivo</strong> de evitar que toque la parte inferior de la pantalla. La jugadora o jugador mueve la&nbsp;<strong>pala</strong> situada en la parte inferior de la pantalla. La&nbsp;<strong>bola</strong>&nbsp;rebota en los bordes de la pantalla de una forma <strong>determinada</strong> o&nbsp;<strong>aleatoria.&nbsp;</strong></p>
+<p>El nombre "<strong><em>Pong</em></strong>" proviene del sonido que hace la bola cuando es golpeada por la pala (<em>ping</em>) y rebota en la mesa (<em>pong</em>).&nbsp;</p>
+<p>Vamos a ver con detalle el funcionamiento de la siguiente versión del<a href="https://scratch.mit.edu/projects/678178194/" target="_blank" title="Accede al Pong en el portal de Scratch" rel="noopener"><strong> videojuego Pong</strong></a>. NOTA: La paleta se mueve con el ratón.</p>
+<p style="text-align: center;"><iframe width="485" height="402" src="https://scratch.mit.edu/projects/678178194/embed"></iframe></p>
+<p style="text-align: justify;">Para que comprendas en profundidad el funcionamiento del videojuego Pong es importante que conozcas&nbsp;cada uno de las elementos&nbsp;del juego.</p>
+<h2>Elementos</h2>
+<p style="text-align: justify;">A continuación, una vez visto el funcionamiento, vamos a&nbsp;<strong>identificar</strong> los <strong>elementos</strong>&nbsp;del videojuego Pong.</p>
+<p><img src="../content/resources/Pong.png" alt="Imagen del videojuego Pong" title="Videojuego Pong" style="display: block; margin-left: auto; margin-right: auto;" width="408" height="323"></p>
+<p style="text-align: justify;">En el siguiente esquema <strong>descomponemos</strong>&nbsp;el&nbsp;<strong>videojuego</strong> en cada uno de sus <strong>elementos</strong>.</p>
+<p><img src="../content/resources/Pong_elementos.png" alt="Imagen que describe la descomposición del Pong" title="Descomposición del videojuego Pong" style="display: block; margin-left: auto; margin-right: auto;" width="456" height="243"></p>
+<p style="text-align: justify;">La línea roja de la parte inferior de la pantalla, la podemos crear como un objeto, o también como una línea pintada sobre el fondo con la herramienta <em>pinta</em>. El fondo y la bola los podemos obtener de la galería de Scratch. Para la pala&nbsp;se puede usar también la herramienta <em>pinta</em>.</p>
+<h2>Dinámicas</h2>
+<p style="text-align: justify;">Aunque el videojuego lo componen cuatro elementos, sólo tres de ellos interactúan en las distintas acciones&nbsp;del juego.</p>
+<p style="text-align: justify;">En el siguiente <strong>esquema</strong>&nbsp;puedes ver el resultado de añadir las distintas <strong>acciones</strong> a cada uno de los <strong>elementos</strong> en la&nbsp;<strong>descomposición&nbsp;</strong>del videojuego Pong.&nbsp;</p>
+<p><img src="../content/resources/Pong_acciones_elementos.png" alt="Imagen que describe la descomposición del Pong" title="Descomposición del videojuego Pong" style="display: block; margin-left: auto; margin-right: auto;" width="443" height="368"></p>
+<p style="text-align: justify;">A continuación te explicamos con detalle cada una de las cuatro principales&nbsp;<strong>dinámicas</strong> del juego Pong y una posible <strong>programación</strong> de cada una de ellas.</p>
+<h2>Rebote de la bola en los bordes</h2>
+<p style="text-align: justify;">Esta dinámica&nbsp;<strong>define</strong>&nbsp;el <strong>comportamiento</strong> de la<strong> bola </strong>al<strong> rebotar con</strong>&nbsp;los<strong> bordes </strong>de la pantalla.&nbsp;</p>
+<p style="text-align: justify;">Por ejemplo, vamos a definir la posición inicial de la bola, el ángulo inicial de movimiento y la velocidad de la bola en el juego.</p>
+<ul>
+<li style="text-align: justify;">Con un ángulo de movimiento inicial de 45 grados.</li>
+<li style="text-align: justify;">Y siempre con una velocidad de 9 pasos.</li>
+<li style="text-align: justify;">Rebotando si toca un borde del fondo de la pista.</li>
+</ul>
+<p style="text-align: center;"><img src="../content/resources/Pong_rebote_bola_.png" alt="Imagen que describe los bloques de rebotar alrededor bola Pong" title="Bloques de rebotar alrededor de la bola del Pong" style="margin-right: 10px; margin-left: 10px;" width="432" height="391"></p>
+<h2>Movimiento de la pala</h2>
+<p style="text-align: justify;">Podemos&nbsp;<strong>controlar</strong> el movimiento de <strong>la pala </strong>por ejemplo <strong>con el puntero del ratón</strong>.</p>
+<ul>
+<li style="text-align: justify;">Debemos programar la pala para que se mueva, al hacer clic en la bandera verde.</li>
+<li style="text-align: justify;">Por siempre, dar a x el valor "posición x del ratón" del ordenador.</li>
+</ul>
+<p><img src="../content/resources/2_mueve_la_paleta.PNG" alt="Imagen que describe los bloques para mover la pala del Pong" title="Bloques para mover la paleta Pong" style="display: block; margin-left: auto; margin-right: auto;" width="245" height="162"></p>
+<h2>Rebote de la bola en la pala</h2>
+<p style="text-align: justify;"><strong>La bola&nbsp;</strong>debe<strong> rebotar </strong>en la<strong> pala </strong>con<strong> diferentes direcciones,</strong> dependiendo de la zona en la que impacte la pelota.&nbsp;Se puede establecer un ángulo de rebote&nbsp;<strong>fijo</strong> para que rebote siempre en la misma dirección, o bien, un comportamiento <strong>aleatorio</strong> de forma que cada rebote sea diferente.</p>
+<ul>
+<li style="text-align: justify;">Si&nbsp;<em>¿tocando la pala?</em>&nbsp;entonces.
+<ul>
+<li style="text-align: justify;">Gira un "<em>número aleatorio entre 160 y 200</em>&nbsp;grados.</li>
+<li style="text-align: justify;">Se mueve la bola a una velocidad de 9 pasos.</li>
+</ul>
+</li>
+</ul>
+<p style="text-align: center;"><img src="../content/resources/Pong_rebote_pala.png" alt="Imagen que describe los bloques para rebotar en la pala del Pong" title="Bloques para rebotar en la pala del Pong" width="592" height="260"></p>
+<h2>Fin del juego</h2>
+<p style="text-align: justify;">Cuando la bola toque la&nbsp;<strong>línea roja será el fin del juego.</strong></p>
+<p style="text-align: justify;"><strong>La línea roja&nbsp;</strong>se puede crear en Scratch como un objeto, o bien,&nbsp;<strong>dibujarse sobre </strong>el<strong> fondo</strong> del escenario con la herramienta <em>pinta</em>.</p>
+<ul>
+<li style="text-align: justify;">Al hacer clic en bandera verde.</li>
+<li style="text-align: justify;">Si la pelota toca el color rojo situado debajo de la pala, el videojuego se detendrá, se detendrán todos los programas, terminando la partida.</li>
+</ul>
+<p style="text-align: center;"><img src="../content/resources/Pong_fin_juego.png" alt="Imagen que describe los bloques para finalizar el juego Pong" title="Bloques para finalizar el juego Pong" width="600" height="227"></p>
+</div></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mtq577of-crn4g0adf" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/interactive.png" alt="">
+</div>
+<h1 class="box-title">Comprueba tu conocimiento sobre el Pong</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-ytfckdegk" class="idevice_node form db-no-data" data-idevice-path="../idevices/form/" data-idevice-type="form" data-idevice-component-type="json" data-idevice-json-data="{&quot;questionsData&quot;:[{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;multiple&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;a.- ¿Qué dinámica se controla con los siguientes bloques de programación?  &lt;img src=\&quot;../content/resources/Pong_bloques_rebote_bola_ejercicio.png\&quot; alt=\&quot;Imagen sobre el rebote de la bola en los bordes Pong\&quot; title=\&quot;Bloques de rebote de la bola en los borde en el Pong\&quot; width=\&quot;186\&quot; height=\&quot;283\&quot; style=\&quot;display: block; margin-left: auto; margin-right: auto;\&quot; /&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Rebote de la bola en la pala&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Movimiento de la pala&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Rebote de la bola en los bordes&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Fin de juego&quot;}]},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;multiple&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;b.- El bloque &lt;img src=\&quot;../content/resources/Pong_sensor_linea_roja_ejercicio.png\&quot; alt=\&quot;Imagen bloque sensor color línea roja del Pong\&quot; title=\&quot;Bloque sensor de color línea roja del Pong\&quot; width=\&quot;180\&quot; height=\&quot;43\&quot; style=\&quot;vertical-align: middle;\&quot; /&gt; es el sensor que se usa para la dinámica....&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Rebote de la bola en los bordes&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Rebote de la bola en la pala&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Fin de juego&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Movimiento de la pala&quot;}]},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;multiple&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;c.- La función que cumple en el videojuego el siguiente bloque &lt;img src=\&quot;../content/resources/Pong_aleatoriedad_rebote_bola_ejercicio.png\&quot; alt=\&quot;Imagen del bloque de aleatoriedad rebote bola del Pong\&quot; title=\&quot;Bloque aleatoriedad rebote de bola del Pong\&quot; width=\&quot;284\&quot; height=\&quot;43\&quot; style=\&quot;vertical-align: middle;\&quot; /&gt; es.......&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:true,&quot;1&quot;:&quot;Definir el ángulo aleatorio de rebote de la bola sobre la pala&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Define el ángulo aleatorio de caída de la bola&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Define el ángulo de giro de la pala&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Define el ángulo de movimiento de la pala&quot;}]},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;multiple&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;d.- Los siguiente bloques de programación establecen &lt;img src=\&quot;../content/resources/Pong_movimiento_pala_ejercicio.png\&quot; alt=\&quot;Imagen de los bloques de movimiento de la pala del Pong\&quot; title=\&quot;Bloques de movimiento de la pala del Pong\&quot; width=\&quot;225\&quot; height=\&quot;147\&quot; style=\&quot;vertical-align: middle;\&quot; /&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Movimiento de la bola y la pala&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Movimiento de la pala&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Movimiento de la bola&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Ninguna de las anteriores&quot;}]},{&quot;activityType&quot;:&quot;selection&quot;,&quot;selectionType&quot;:&quot;multiple&quot;,&quot;baseText&quot;:&quot;&lt;p&gt;e.- ¿A qué objeto corresponden los siguientes bloques de programación?  &lt;img src=\&quot;../content/resources/Pong_bloques_sensores_bola.png\&quot; alt=\&quot;Imagen de los bloques programación de la bola del Pong\&quot; title=\&quot;Bloques programación sensores bola del Pong\&quot; width=\&quot;313\&quot; height=\&quot;323\&quot; style=\&quot;vertical-align: middle;\&quot; /&gt;&lt;/p&gt;&quot;,&quot;answers&quot;:[{&quot;0&quot;:false,&quot;1&quot;:&quot;Pala&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Pala y Bola&quot;},{&quot;0&quot;:true,&quot;1&quot;:&quot;Bola&quot;},{&quot;0&quot;:false,&quot;1&quot;:&quot;Ninguna de las anteriores&quot;}]}]}" data-idevice-template="form.html">
+
+</div>
+</div>
+</article><article id="block-mtq577of-otll2c8y4" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/write.png" alt="">
+</div>
+<h1 class="box-title">Haciendo debugging con el videojuego Pong</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-qjihoghec" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Ha llegado el momento de comprobar tus conocimientos sobre el funcionamiento del&nbsp;videojuego Pong en su versión para un jugador con Scratch.</p>
+<p style="text-align: justify;">En esta actividad, vamos a trabajar en pareja, te presento una versión del videojuego Pong con bugs, debes identificar qué anda mal y encontrar una solución para ellos.</p>
+<p style="text-align: justify;"><a href="https://scratch.mit.edu/projects/691416948/" target="_blank" title="Accede al videojuego Pong con bugs" rel="noopener">Videojuego Pong con bugs.</a></p>
+<ul style="text-align: justify;">
+<li>En este programa, la <strong>bola</strong> debería <strong>rebotar</strong> cada vez que <strong>toca</strong> la <strong>pala</strong>, pero algo no está funcionando porque no lo hace. ¿Cómo podemos reparar este programa?</li>
+<li>La partida del videojuego debería <strong>finalizar</strong> cuando la <strong>bola</strong> <strong>toca</strong> la <strong>línea</strong> <strong>roja</strong> inferior de la pantalla pero esto no pasa. ¿Cómo podemos reparar este programa?</li>
+</ul>
+<p style="text-align: justify;">Escribe tu <strong>solución</strong> en tu cuaderno y utiliza la función <em>reinventar</em> de Scratch, para reparar los bugs y guardar el videojuego con tus soluciones.</p>
+<p style="text-align: justify;">Reflexiona y pon en común con tus compañeros de clase tus experiencias de prueba y debuggins.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-4"><h2><span class="sr-av">Lumen dice </span>¿Necesitas ayuda con esta actividad?</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">Si tienes dudas para realizar esta actividad no te preocupes, es algo que puede pasar,&nbsp;<strong>repasa</strong>&nbsp;el punto uno de esta página para que comprendas mejor el funcionamiento de este videojuego.</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mtq577of-8wudilhk6" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/write.png" alt="">
+</div>
+<h1 class="box-title">Pantalla de inicio del videojuego</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-md7dg1fyc" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;">El videojuego debe tener una <strong>pantalla de inicio </strong>con una<strong> cuenta atrás </strong>para empezar el juego. ¿Cómo la harías con Scratch? Te ayudo:</p>
+<ul style="text-align: justify;">
+<li>Primero <strong>haz</strong> un <strong>boceto</strong> de dichas pantallas en tu cuaderno.</li>
+<li>A continuación, <strong>píntalas</strong> con la <strong>herramienta</strong> <strong><em>Pinta</em></strong> de Scratch.</li>
+<li>Por último, <strong>prográmala</strong> para que siempre se visualicen&nbsp;<strong>sólo</strong> <strong>al</strong> <strong>iniciar</strong> el juego.</li>
+</ul>
+<p style="text-align: justify;">Para crear una pantalla de inicio que sirva de <strong>presentación</strong> del videojuego con una <strong>cuenta atrás</strong> para empezar puedes inspirarte en este ejemplo.</p>
+<p style="text-align: center;"><iframe width="485" height="402" src="https://scratch.mit.edu/projects/638567640/embed"></iframe></p>
+<p style="text-align: justify;">Lo más sencillo es que <strong>diseñes</strong>&nbsp;cuatro fondos, tres que contengan sólo los números de la cuenta atrás (3,2,1) y el cuarto que será la pista de juego.</p>
+<p style="text-align: justify;">Recuerda <strong>programar</strong> ir cambiando de fondo cada segundo, sólo al inicio del videojuego.</p>
+<p style="text-align: justify;">Otra opción más compleja es crear una portada con un menú de inicio. Aquí te dejo un tutorial de esta segunda opción.</p>
+<p style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/yNid2AM4j7Y" allowfullscreen="allowfullscreen" referrerpolicy="strict-origin-when-cross-origin"></iframe></p>
+<p style="text-align: justify;">¡Ánimo, seguro que lo haces bien!</p></div></div></section></div>
+</div>
+</div>
+</article><article id="block-mtq577of-hkntsq52m" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/write.png" alt="">
+</div>
+<h1 class="box-title">Crea tu propio videojuego Pong</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mtq577of-mh3xmtseu" class="idevice_node udl-content" data-idevice-path="../idevices/udl-content/" data-idevice-type="udl-content">
+<div class="exe-udlContent exe-udlContent-expression"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p style="text-align: justify;"><img src="../content/resources/table-tennis.png" alt="Imagen que representa el juego Pin Pong" title="Juego Pin Pong" style="float: left; margin-right: 10px; margin-left: 10px;" width="200" height="160"></p>
+<p style="text-align: justify;">Si quieres crear tu propio <strong>videojuego</strong> <strong>Pong</strong> en su versión para <strong>un</strong> <strong>jugador</strong> con Scratch, sólo debes seguir el siguiente proceso:&nbsp;abre&nbsp;un proyecto nuevo en Scratch y&nbsp;crea todos los elementos del videojuego Pong.</p>
+<p style="text-align: justify;">Para empezar a crear el videojuego, recuerda que los nuevos proyectos de Scratch comienzan con un fondo blanco y un gato. Pero puedes borrarlo y personalizarlo todo. Pinta un fondo que represente la pista de juego.</p>
+<p style="text-align: justify;">Además, necesitamos diseñar al menos dos objetos, una pelota y una pala, además del fondo, antes de pasar a programar el videojuego Pong.</p>
+<p style="text-align: justify;">Abre el programa <a href="https://scratch.mit.edu/" target="_blank" title="Accede al recurso Scratch" rel="noopener">Scratch.mit.edu</a> y pulsa sobre el botón "<strong>Iniciar sesión</strong>" introduce tu usuario y contraseña. <img src="../content/resources/usuario_iniciar.PNG" alt="Imagen que describe el menú iniciar sesión de Scratch" title="Iniciar sesión en Scratch" style="float: right; margin-right: 10px; margin-left: 10px;" width="168" height="132"></p>
+<p>Veras la siguiente pantalla.</p>
+<p><img src="../content/resources/pantalla_de_inicio.PNG" alt="Imagen que describe la usuario logueado en Scratch" title="Usuario logueado en Scratch" style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto;" width="490" height="348"></p>
+<p>Te ayudo con los elementos del juego:</p>
+<div class="exe-fx exe-paginated">
+<h2>Crea un nuevo proyecto</h2>
+<p style="text-align: justify;">Pulsamos sobre <strong>el usuario</strong>&nbsp;si se cuenta con un registro previo o accedemos directamente al menú <strong>Crear</strong>&nbsp;y eliminamos el objeto Gato que nos aparece por defecto en Scratch.</p>
+<p><img src="../content/resources/crear.PNG" alt="Imagen describe el botón Crear en Scratch" title="Botón crear en Scratch" style="vertical-align: middle; display: block; margin-left: auto; margin-right: auto;" width="557" height="30"></p>
+<h2>Diseñamos la Pala</h2>
+<p style="text-align: justify;">Recurrimos a <strong>la herramienta pintar</strong>, para diseñar la Pala sobre la que rebotará la bola.</p>
+<p><img src="../content/resources/pintar_una_paleta.PNG" alt="Imagen representa diseño de la pala del Pong " title="Diseño de la pala del Pong" style="display: block; margin-left: auto; margin-right: auto;" width="600" height="310"></p>
+<h2>Diseña la bola</h2>
+<p style="text-align: justify;">Podemos elegir una bola de las disponibles en la&nbsp;<strong>galería</strong> de Scratch o iremos a la herramienta <strong>Pinta </strong>que vimos en el tema anterior, <strong>para diseñar la bola</strong> que debe rebotar en las paredes del fondo y en la pala.</p>
+<p><img src="../content/resources/pintar_una_pelota.PNG" alt="Imagen que describe el diseño de la bola del Pong" title="Diseño de la bola del Pong" style="display: block; margin-left: auto; margin-right: auto;" width="601" height="379"></p>
+<h2>Diseña la pista</h2>
+<p style="text-align: justify;">El <strong>fondo</strong> del juego que será la pantalla principal o pista de juego lo podemos elegir de la <strong>galería</strong> de Scratch o lo podemos diseñar con la herramienta <strong>Pinta</strong>.&nbsp;</p>
+<p style="text-align: justify;">Es muy importante que dicho fondo no contenga el mismo color que la línea de Fin de juego debajo de la paleta, porque ya sabes que el juego se detendrá cuando la pelota toque ese color.</p>
+<p><img src="../content/resources/Pong_fondo_linea_roja.png" alt="Imagen que describe la pista del Pong" title="La pista del Pong" style="display: block; margin-left: auto; margin-right: auto;" width="600" height="299"></p>
+</div>
+<p style="text-align: justify;">Para seleccionar los bloques de programación del videojuego Pong en Scratch, realizar los siguientes pasos recogidos en las&nbsp;<a href="https://resources.scratch.mit.edu/www/cards/es/pong-cards.pdf" target="_blank" title="Acceder al recurso de las tarjetas de Scratch sobre el juego Pong" rel="noopener">Tarjetas de juego Pong.</a></p>
+<p style="text-align: justify;">Y si te atreves a realizar el videojuego Pong en su versión para <strong>dos</strong> <strong>jugadores</strong> con Scratch.</p>
+<p style="text-align: justify;">Puedes intentar crear la versión para dos jugadores de este videojuego en Scratch. Te puedes inspirar en el siguiente.</p>
+<p style="text-align: center;"><br><iframe width="560" height="315" src="https://scratch.mit.edu/projects/165290986/embed" allowfullscreen="allowfullscreen"></iframe><br><br><br></p></div></div></section></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/4-explorando-los-videojuegos.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/42-veamos-como-funciona-el-maze.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-nc-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="license">Creative Commons: Reconocimiento - no comercial - compartir igual 4.0</a></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
